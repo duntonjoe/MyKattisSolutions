@@ -1,8 +1,8 @@
 /*
-  Filename    : HelloWorld.cc
+  Filename    : TimeLoop.cc
   Author      : Joseph Dunton
-  Problem     : Hello World!
-  Description : Write Hello World
+  Problem     : Stuck In A Time Loop
+  Description : Repeat the Wizard's Spell N times
 */
 
 /************************************************************/
@@ -15,12 +15,17 @@
 // Using Declartions
 using std::cout;
 using std::endl;
+using std::cin;
 
 /************************************************************/
-
 
 int
 main (int argc, char* argv[])
 {
-  cout << "Hello World!" << endl;
+  int times;
+  cin >> times;
+  for (int i = 1; i <= times; ++i)
+  {
+    cout << i << " Abracadabra" << endl;
+  }
 }
