@@ -15,7 +15,7 @@
 // Using Declartions
 using std::cout;
 using std::cin;
-
+using std::endl;
 /************************************************************/
 
 int
@@ -23,11 +23,9 @@ main (int argc, char* argv[])
 {
   int r1;
   int S;
-  int r2;
 
   cin >> r1;
   cin >> S;
 
-  r2 = (2*S) - r1;
-  cout << r2;
+  cout << ( (2*S) - r1 ) << endl;
 }
